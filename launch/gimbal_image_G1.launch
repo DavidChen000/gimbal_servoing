@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="amov_gimbal_sdk_ros" type="amov_gimbal_image_node" name="amov_gimbal_image_node" output="screen">
+        <param name="camera_image_topic" value="/amov_gimbal_ros/gimbal_image"/>
+        <param name="camera_ip" type="string" value="192.168.2.64"/>
+        <param name="camera_image_fps" type="int" value="30"/>
+        <param name="camera_height" type="int" value="720" />
+        <param name="camera_width" type="int" value="1280" />
+        <param name="camera_bitrate" type="int" value="10000000" />
+    </node>
+</launch>

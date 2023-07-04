@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="amov_gimbal_sdk_ros" type="amov_gimbal_node" name="amov_gimbal_node" output="screen">
+        <param name="serial_port"  type="string"  value="/dev/ttyUSB0"/>
+        <param name="baud_rate"  type="int"  value="115200"/>
+	</node>
+</launch>
